@@ -1,0 +1,157 @@
+/*вес селектора: 
+
+тег < класс < id < style < имя класса/тега:important
+лучше использовать только классы
+если веса одинаковые то будет применяться то что ниже (сверху вниз)
+*/
+
+
+body
+{
+    
+    background-color: rgb(120, 128, 136);
+    width: auto; /*автоизменение ширины (например для мобилок)*/
+    height: auto; /*автоизменение высоты*/
+    max-height: 800px; /*размер элемента (высота)*/
+    min-height: 700px;  
+    max-width: 700px; /*размер элемента (ширина)*/
+    min-width: 700px;
+    margin: 0 auto; /*нужен для центровки сайта*/
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+    font-weight: 800;
+    padding: 20px; /*граница внутри бордера*/
+    margin-top: 60px; /*граница за бордером*/
+    padding-left: 50px;
+}
+
+.spiral
+{
+    transform: translate(-341px, 325px) rotate(270deg); /*переместить элемент по XY и повернуть его*/
+    /*чтобы он не бегал когда меняешь маштаб страницы*/
+    position: absolute;
+    min-width: 100px;
+    min-height: 100px;
+    
+}
+
+.woodfound
+{
+    padding: 20px;
+    border: 2px solid;
+    background-image: url(assets/img/wood.jpg);
+    box-shadow: 4px 4px 20px #0c0d0e;
+}
+
+.conteiner
+{
+    border: 2px solid;
+    max-height: 100%;
+    min-height: 700px;
+    padding: 3px;
+    padding-left: 25px;
+    background: url(https://img.freepik.com/free-photo/white-watercolor-papar-texture-background-cover-card-design-overlay-aon-paint-art-background_1962-2191.jpg?w=2000);
+    box-shadow: 1px 1px 20px #0c0d0e;
+}
+
+header
+{
+    background: chocolate;
+    display: flex; /*чтобы выровнять по горизонтали*/
+    justify-content: left; /*чтобы выделить между элементами пустое место (отступ до макс ширины)*/
+    border-bottom: 1px solid; /*граница*/
+    height: 30px;
+    align-items: flex-end; /*выровнять элементы по низу*/
+
+}
+
+a
+{
+    text-decoration: none;
+    color: black;
+    
+}
+
+a:hover
+{
+    color: red;
+    text-decoration: underline;
+}
+
+nav
+{
+    background: darkgreen;
+    opacity: 75%;
+    margin-left: 100px;
+}
+
+.title
+{
+    text-align: center; /*выровнять текст по центру*/
+    background: none;
+    font-weight: 800;
+    font-size: 40px;
+    justify-content: center;
+    flex-direction:column; /* выравнивает текст наверх, или там снизу и тд*/
+    display: flex;
+    height: 100px;
+    min-width: none;
+    margin-top: 250px;
+    
+}
+
+.links
+{
+    margin-left: 140px;
+}
+
+.links:first-child /*выбрать первый элемент класса*/
+{
+    margin-left: 0px;
+}
+
+nav:hover
+{
+    opacity: 80%; /* прозрачность*/
+}
+
+section
+{
+    background: blue;
+}
+
+article
+{
+    background: aquamarine;
+}
+
+aside
+{
+    background: palegreen;
+}
+
+main
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: purple;
+    height: 300px;
+    text-align: center;
+    
+    
+}
+
+.ftitle
+{
+    text-align: justify;
+}
+
+footer
+{
+    background: red;
+    position: relative;
+    top: 115px;
+    left: 0px;
+}
+
